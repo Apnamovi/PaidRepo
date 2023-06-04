@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/af4a357fd6e142d8a1a6c.jpg" alt="DQ-The-File-Donor Logo">
+  <img src="[https://graph.org/file/af4a357fd6e142d8a1a6c.jpg](https://telegra.ph/file/5e0d121c04318ce13a234.jpg)" alt="DQ-The-File-Donor Logo">
 </p>
 <h1 align="center">
   JK DEVELOPER
