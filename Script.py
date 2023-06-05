@@ -210,7 +210,10 @@ Aɴʏ Dᴏᴜʙᴛs ᴏʀ Nᴏᴛ Cᴏɴɴᴇᴄᴛɪɴɢ? Cᴏɴᴛᴀᴄᴛ M�
 Paid Bot</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code></b>"""
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code>
+
+🥀 Join Backup - ,<a href=https://t.me/Latest_Movies_FreeOnNet>Click Here</a>👈
+💝 New Movies - <a href=https://t.me/RK_Machine>Click Here</a>👈</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 𝐓𝐢𝐭𝐥𝐞 : {title}
