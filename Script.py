@@ -212,7 +212,7 @@ Paid Bot</b>"""
     CAPTION = """
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code>
 
-🥀 Join Backup - ,<a href=https://t.me/The_Happy_Hour_Hindi>Click Here</a>👈
+🥀 Join Backup - <a href=https://t.me/The_Happy_Hour_Hindi>Click Here</a>👈
 💝 New Movies - <a href=https://t.me/The_Happy_Hours>Click Here</a>👈</b>"""
 
     JK_DEVLOPER = """
