@@ -215,6 +215,12 @@ Paid Bot</b>"""
 🥀 Join Backup - ,<a href=https://t.me/The_Happy_Hour_Hindi>Click Here</a>👈
 💝 New Movies - <a href=https://t.me/The_Happy_Hours>Click Here</a>👈</b>"""
 
+    JK_DEVLOPER = """
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {file_name}
+
+🥀 Join Backup - ,<a href=https://t.me/The_Happy_Hour_Hindi>Click Here</a>👈
+💝 New Movies - <a href=https://t.me/The_Happy_Hours>Click Here</a>👈</b>"""
+    
     IMDB_TEMPLATE_TXT = """
 <b>🏷 𝐓𝐢𝐭𝐥𝐞 : {title}
 🎭 𝐆𝐞𝐧𝐫𝐞𝐬 : {genres}
