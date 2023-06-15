@@ -136,9 +136,9 @@ async def start(client, message):
             try:
                 await asyncio.sleep(10)
                 await kk.delete()
-                kk = await client.send_cached_media(
+                await client.send_cached_media(
                     chat_id=message.from_user.id,
-                    file_id=msg.get("file_id"),
+                    kk = file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
@@ -154,9 +154,9 @@ async def start(client, message):
                 logger.warning(f"Floodwait of {e.x} sec.")
                 await asyncio.sleep(10)
                 await gg.delete()
-                gg = await client.send_cached_media(
+                await client.send_cached_media(
                     chat_id=message.from_user.id,
-                    file_id=msg.get("file_id"),
+                    gg = file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
@@ -272,10 +272,10 @@ async def start(client, message):
                 )
                 return
             await asyncio.sleep(10)
-            await msg.delete()
+            await ff.delete()
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
-                file_id=file_id,
+                ff = file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -325,9 +325,9 @@ async def start(client, message):
         return
     await asyncio.sleep(10)
     await jj.delete()
-    jj = await client.send_cached_media(
+    await client.send_cached_media(
         chat_id=message.from_user.id,
-        file_id=file_id,
+        jj = file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
