@@ -134,7 +134,9 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                await client.send_cached_media(
+                await asyncio.sleep(10)
+                await kk.delete()
+                kk = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
@@ -150,7 +152,9 @@ async def start(client, message):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                await client.send_cached_media(
+                await asyncio.sleep(10)
+                await gg.delete()
+                gg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
@@ -267,6 +271,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
+            await asyncio.sleep(10)
+            await msg.delete()
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -317,7 +323,9 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
-    await client.send_cached_media(
+    await asyncio.sleep(10)
+    await jj.delete()
+    jj = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
