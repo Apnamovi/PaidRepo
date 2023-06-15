@@ -134,11 +134,10 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                await asyncio.sleep(10)
-                await kk.delete()
+                
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
-                    kk = file_id=msg.get("file_id"),
+                    file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
@@ -152,11 +151,10 @@ async def start(client, message):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                await asyncio.sleep(10)
-                await gg.delete()
+                
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
-                    gg = file_id=msg.get("file_id"),
+                    file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
@@ -271,11 +269,9 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
-            await asyncio.sleep(10)
-            await ff.delete()
-            msg = await client.send_cached_media(
+            await client.send_cached_media(
                 chat_id=message.from_user.id,
-                ff = file_id=file_id,
+                file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -323,11 +319,9 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
-    await asyncio.sleep(10)
-    await jj.delete()
     await client.send_cached_media(
         chat_id=message.from_user.id,
-        jj = file_id=file_id,
+        file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
