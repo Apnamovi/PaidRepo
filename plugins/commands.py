@@ -139,8 +139,6 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    await asyncio.sleep(10)
-                    await jk.delete()
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
@@ -149,6 +147,8 @@ async def start(client, message):
                         ]
                     )
                 )
+            await asyncio.sleep(10)
+            await jk.delete()
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
@@ -157,8 +157,6 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    await asyncio.sleep(10)
-                    await hh.delete()
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
@@ -167,6 +165,8 @@ async def start(client, message):
                         ]
                     )
                 )
+            await asyncio.sleep(10)
+            await hh.delete()
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
@@ -275,8 +275,6 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                await asyncio.sleep(10)
-                await gg.delete()
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
@@ -285,6 +283,8 @@ async def start(client, message):
                     ]
                 )
             )
+            await asyncio.sleep(10)
+            await gg.delete()
             filetype = msg.media
             file = getattr(msg, filetype.value)
             title = file.file_name
@@ -328,8 +328,6 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        await asyncio.sleep(10)
-        await kk.delete()
         reply_markup=InlineKeyboardMarkup(
             [
              [
@@ -338,8 +336,8 @@ async def start(client, message):
             ]
         )
     )
-                    
-
+    await asyncio.sleep(10)                
+    await kk.delete()
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
            
