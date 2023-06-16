@@ -1,12 +1,9 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.10.8
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /app
 
-RUN cd /
+COPY requirements.txt
+
 RUN pip3 install -r requirements.txt
-RUN mkdir /PaidRepo
-WORKDIR /PaidRepo
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+
+CMD python3 bot.py
