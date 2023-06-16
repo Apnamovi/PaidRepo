@@ -1,14 +1,16 @@
 version: "3.10"
 services:
-   worker:
+  app:
+    container_name: srcbot
     build: .
+    command: bash bash.sh
     environment:
-      BOT_TOKEN: $BOT_TOKEN
-      API_ID: $API_ID
-      API_HASH: $API_HASH
-      CHANNELS: $CHANNELS
-      ADMINS: $ADMINS
-      LOG_CHANNEL: $LOG_CHANNEL
-      DATABASE_NAME: $DATABASE_NAME
-      DATABASE_URI: $DATABASE_URI
-      HEROKU_API_KEY: $HEROKU_API_KEY
+      API_ID: # Your API HASH from my.telegram.org
+      API_HASH: # Your API ID from my.telegram.org
+      BOT_TOKEN: # Bot token, get it from @BotFather 
+      ADMINS: #ADMINS
+      CHANNELS: #CHANNELS
+      AUTH_CHANNEL: #AUTH_CHANNEL
+      AUTH_USERS: #AUTH_USERS
+      DATABASE_URI: #DATABASE_URI
+      LOG_CHANNEL: #LOG_CHANNEL
